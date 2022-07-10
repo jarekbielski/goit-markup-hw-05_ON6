@@ -570,7 +570,12 @@ img {
     padding-bottom: 20px;
 }
 
-.contact, .footer-conatiner {
+.contact{
+    display: flex;
+}
+
+
+.footer-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -581,6 +586,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 
 .footer-social-media-link {
