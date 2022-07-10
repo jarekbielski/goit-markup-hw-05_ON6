@@ -1,1 +1,1 @@
-jarekbielski-goit-markup-hw-05_ON6
+goit-markup-hw-05_ON6
