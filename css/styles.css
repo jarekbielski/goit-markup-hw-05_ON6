@@ -572,22 +572,24 @@ img {
 
 .contact {
     display: flex;
+    align-items: center;
 }
-
 
 .footer-container {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
+.footer-container-right {
+    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+}
 
 .footer-social-media-list {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-
+    justify-content: center;
 }
+
 
 .footer-social-media-link {
     display: flex;
