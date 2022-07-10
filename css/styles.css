@@ -125,11 +125,33 @@ img {
 .navigation-list-link,
 .portfolio-navigation-link-accent,
 .portfolio-navigation-link {
+    position: relative;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.142;
     letter-spacing: 0.02em;
     color: #212121;
+    transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation-list-link::after,
+.portfolio-navigation-link-accent::after,
+.portfolio-navigation-link::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 0;
+    height: 4px;
+    top: 44px;
+    left: 0px;
+    background-color: #2196f3;
+    border-radius: 2px;
+    transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation-list-link:hover::after .portfolio-navigation-link-accent::after,
+.portfolio-navigation-link::after {
+    width: 100%;
 }
 
 .navigation-list-link:hover,
@@ -170,6 +192,7 @@ img {
 }
 
 
+
 .adress-link,
 .adress-phone-number-link,
 .adress-email-footer,
@@ -182,6 +205,7 @@ img {
     letter-spacing: 0.02em;
     padding-top: 32px;
     padding-bottom: 32px;
+    transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .adress-link {
@@ -189,7 +213,8 @@ img {
 }
 
 .adress-phone-number-link {
-    margin-left: 50px;
+    margin-left: 30px;
+    width: 110px;
 }
 
 
@@ -210,6 +235,7 @@ img {
 .hero-center-side {
     height: 600px;
     background: #2F303A;
+    margin: auto;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)), url("/Images/background/Img-bacground.jpg");
 }
@@ -246,6 +272,8 @@ img {
     padding-bottom: 30px;
     padding-left: auto;
     padding-right: auto;
+    margin: auto;
+    width: 696px;
 
 }
 
@@ -430,6 +458,9 @@ img {
     margin-bottom: 30px;
     background-color: #FFFFFF;
     fill: #AFB1B8;
+    transition-property: fill, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -437,6 +468,9 @@ img {
     display: flex;
     width: 20px;
     height: 20px;
+    transition-property: fill, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-link:hover,
@@ -449,6 +483,36 @@ img {
 
 /*---END-TEAM--- */
 
+/*---CLIENTS---*/
+.client {
+    display: flex;
+}
+
+.clients-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.clients-list-link {
+    display: flex;
+    fill: #AFB1B8;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    padding: 16px 32px;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients-list-link:hover,
+.clients-list-link:focus {
+    fill: #2196F3;
+    border: 1px solid #2196F3;
+}
+
+
+/*---END-CLIENTS---*/
 
 /*---FOOTER--- */
 
