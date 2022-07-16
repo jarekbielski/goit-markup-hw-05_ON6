@@ -173,12 +173,6 @@ img {
 }
 
 
-
-.portfolio-navigation-link-accent {
-    color: #2196F3;
-}
-
-
 .adress-link,
 .adress-phone-number-link,
 .adress-email-footer,
@@ -372,6 +366,29 @@ img {
 
 .about-img:not(:last-child) {
     margin-right: 30px;
+}
+
+.about-img {
+    position: relative;
+    flex-basis: calc(100%/3-30px);
+}
+
+.about-img>.products {
+    position: absolute;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: center;
+    font-weight: 700;
+    color: #FFFFFF;
+    line-height: 1.172;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    background-color: rgba(47, 48, 58, 0.8);
+    padding: 27px 90px;
+    width: 100%;
+    height: 70px;
+    top: 225px;
+
 }
 
 /*---END-ABOUT--- */
@@ -655,6 +672,7 @@ img {
     padding: 6px 22px;
     margin-bottom: 50px;
     border-style: none;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation-portfolio-link:hover,
