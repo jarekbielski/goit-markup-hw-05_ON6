@@ -121,7 +121,6 @@ img {
     margin-right: 93px;
     color: var(--main-color);
     text-decoration: none;
-    padding-bottom: 25px;
     width: 145px;
 }
 
@@ -149,7 +148,7 @@ img {
     line-height: 1.142;
     letter-spacing: 0.02em;
     color: #212121;
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation-list-link:hover,
@@ -185,7 +184,7 @@ img {
     padding-top: 32px;
     padding-bottom: 32px;
     margin-right: auto;
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .adress-link {
@@ -471,7 +470,9 @@ img {
     margin-bottom: 30px;
     background-color: #FFFFFF;
     fill: #AFB1B8;
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: fill, border, cursor;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon {
@@ -509,7 +510,7 @@ img {
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     padding: 16px 32px;
-    transition-property: fill, border, cursor;
+    transition-property: fill, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -542,7 +543,7 @@ img {
     letter-spacing: 0.03em;
     margin-right: 93px;
     text-decoration: none;
-    
+
 }
 
 .accent-footer {
@@ -614,7 +615,9 @@ img {
     width: 44px;
     height: 44px;
     text-decoration: none;
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: fill, background-color, cursor;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-media-item {
@@ -641,6 +644,9 @@ img {
     display: flex;
     width: 20px;
     height: 20px;
+    transition-property: fill, background-color, cursor;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*---END-FOOTER--- */
@@ -670,7 +676,9 @@ img {
     padding: 6px 22px;
     margin-bottom: 50px;
     border-style: none;
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color, background-color, cursor, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation-portfolio-link:hover,
@@ -697,7 +705,9 @@ img {
     margin: 15px;
     flex-basis: calc(100%/3 - 30px);
     background: #FFFFFF;
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: cursor, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .what-we-do-list:hover, .what-we-do-list:focus {
